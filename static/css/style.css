@@ -1,6 +1,6 @@
 body{
 	font-family: sans-serif;
-    background-color: grey;
+    background-color:#c7ffd8;
 }
 
 
@@ -17,38 +17,45 @@ h1{
 
 
 ul{
-	background-color:crimson;
+	background-color:#98ded9;
 	font-size: 25px;
 	padding:10px;
+	text-align: right;
+	
+}
+ul img{
+	text-align: left;
 }
 
 ul a{
-	color: #fff;
+	color: #000;
 	text-decoration: none;
-	padding: 0 15px;
+	padding: 0 10px;
 }
-
-#container{
-	width: 300px;
-	height: 490px;
-	background-color: aqua;
-	padding:50px 80px; 
-	border: solid #000 2px ;
-	border-radius: 20px;
-}
-
-
 
 a:hover{
 	color: grey;
 }
-
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.8s;
+	width: 20%;
+	left: 100px;;
+  }
+  
+  .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+	padding: 2px 16px;
+  }
 
 #nav-image{
     width: 10%;
     height: 10%;
     position: relative;
-    align-items: left;
+    text-align: left;
 }
 
 table{
@@ -74,8 +81,8 @@ td{
 
 
 .about{
-	background-color: #1a1a1c;
-	color: #fff;
+	background-color:cadetblue;
+	color: #000;
 }
 
 
@@ -97,9 +104,49 @@ td{
 }
 
 
-.notes{
-    margin-left: auto;
-    margin-right: auto;
-    display: table-cell;
-	text-align: center;
-}
+.board {
+	display: flex;
+  }
+  
+  .white {
+	position: relative;
+	width: 100px;
+	height: 400px;
+	background: #f9eaff;
+	margin-left: 5px;
+	border-radius: 10px;
+	box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+	  3px 3px 5px rgba(0, 0, 0, 0.7);
+  }
+  .white h1 {
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	transform: translate(-50%, -10%);
+	user-select: none;
+  }
+  
+  .white:active {
+	box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+	  3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .black {
+	width: 60px;
+	height: 200px;
+	background: #000;
+	margin: 0 -30px;
+	border-radius: 10px;
+	box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+	  3px 3px 5px rgba(0, 0, 0, 0.7);
+	z-index: 1;
+  }
+  
+  .black:active {
+	box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+	  3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+footer{
+   background-color: #98ded9;
+   height: 250px;
+}  
