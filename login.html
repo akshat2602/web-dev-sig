@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Login page</title>
-	<link rel="stylesheet" type="text/css" href="static/css/style.css">
-</head>
-<body>
+  <head>
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/login.css" />
+  </head>
+  <body>
+    <div>
+      <img id="nav-image" src="static/images/Studio_Project.jpeg" />
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="#contact">Contact Us</a>
+      </ul>
+    </div>
+    <div
+      class="outer_box"
+      style="
+        width: fit-content;
+        padding: 1em;
+        margin: 10em auto;
+        box-shadow: 0 0 10px;
+        border-radius: 15px;
+        min-width: 300px;
+      "
+    >
+      <form>
+        <div id="container">
+          <label for="fname">Name:</label>
+          <br />
+          <input type="text" id="fname" />
+          <br /><br />
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" id="email" />
+          <br /><br />
+          <label>Contact Number:</label>
+          <br />
+          <input type="text" id="cno" />
+          <br /><br />
+          <label for="range">Rate your experience:</label>
+          <br />
+          <input type="range" id="range" max="100" min="1" />
+          <br /><br />
+          <label>Gender</label>
+          <br />
+          <input type="radio" name="Gender" />Male
+          <br />
+          <input type="radio" name="Gender" />Female <br /><br />
+          <label for="age">Age:</label>
+          <select>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+          </select>
+          <br /><br />
+          <label>Anything you want to say?</label>
+          <br />
+          <textarea rows="2" cols="30"></textarea>
+          <br /><br />
+          <button class="btn">Sign Up</button>
+        </div>
+      </form>
+    </div>
 
-	<div>
-		<ul>
-            <img id="nav-image" src="static/images/Studio_Project.jpeg"/>
-			<a href="#home">Home</a>
-			<a href="#about">About Us</a>
-			<a href="login.html">Login</a>
-			<a href="#contact">Contact Us</a>
-		</ul>
-	</div>
-		<div class="outer_box" style="background-color: cadetblue;">
-			<form>
-				<center>
-	 			<div id="container">
-	 				<label for="fname">Name:</label>
-	 				<br>
-					<input type="text" id="fname">
-					<br><br>
-					<label for="email">Email:</label>
-					<br>
-					<input type="email" id="email">
-					<br><br>
-					<label>Contact Number:</label>
-					<br>
-					<input type="text" id="cno">
-					<br><br>
-					<label for="range">Rate your experience:</label>
-					<br>
-					<input type="range" id="range" max="100" min="1">
-					<br><br>
-					<label>Gender</label>
-					<br>
-					<input type="radio" name="Gender">Male
-					<br>
-					<input type="radio" name="Gender">Female
-					<br><br>
-					<label for="age">Age:</label>
-					<select>
-						<option>15</option>
-						<option>16</option>
-						<option>17</option>
-						<option>18</option>
-						<option>19</option>
-					</select>
-					<br><br>
-					<label>Anything you want to say?</label>
-					<br>
-					<textarea rows="2" cols="30"></textarea>
-					<br><br>
-					<button>Sign Up</button>
-				</div></center>
-	 		</form>
-	 </div>
-
-
-	 <footer>
-		<center><h2>Contact Us</h2>
-		<div>
-            <p>Made with ❤️ by PASC Web Team</p>
-		</div>
-        </center>
-	</footer>
-</body>
+    <footer>
+      <h2>Contact Us</h2>
+      <p>Made with ❤️ by PASC Web Team</p>
+    </footer>
+  </body>
 </html>

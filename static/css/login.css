@@ -1,0 +1,20 @@
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.btn {
+  color: blue;
+  border: none;
+  padding: 0.75em;
+  border-radius: 999px;
+  border: 2px solid blue;
+}
+.btn:hover {
+  background-color: blue;
+  color: #ffffff;
+  box-shadow: blue 0 0 5px;
+}
+form {
+  text-align: center;
+}
