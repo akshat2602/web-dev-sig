@@ -21,19 +21,31 @@ btns.forEach((btn) => {
 });
 
 function playAudio(btn) {
-  console.log(typeof btn.dataset.key);
   let audio = new Audio("../../res/pianoNotes/" + btn.dataset.key + ".mp3");
   audio.play();
 }
 
 document.addEventListener("keypress", (e) => {
-  if (keyMap[e.key.toLowerCase()]) {
-    console.log(
-      document.querySelector("[data-key='" + keyMap[e.key.toLowerCase()] + "']")
-    );
-    let audio = new Audio(
-      "../../res/pianoNotes/" + keyMap[e.key.toLowerCase()] + ".mp3"
-    );
+  const mappedKeyValue = keyMap[e.key.toLowerCase()];
+  if (mappedKeyValue) {
+    const tile = document.querySelector("[data-key='" + mappedKeyValue + "']");
+    let originalBg, activeBg;
+
+    // according to the tile class
+    if (tile.className.includes("white")) {
+      originalBg = "#98ded9";
+      activeBg = "#00bfff";
+    } else {
+      originalBg = "#000";
+      activeBg = "#555555";
+    }
+
+    tile.style["background-color"] = activeBg;
+    setTimeout(() => {
+      tile.style["background-color"] = originalBg;
+    }, 100);
+
+    let audio = new Audio("../../res/pianoNotes/" + mappedKeyValue + ".mp3");
     audio.play();
   }
 });
